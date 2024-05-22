@@ -1,0 +1,89 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.navbar {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    background-color: #333;*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.navbar-left .logo {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.navbar-right button {*/
+/*    background-color: #ff5722;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 10px 20px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.search-panel {*/
+/*    margin-top: 70px;*/
+/*    padding: 20px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*#hotelList {*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.hotel-item {*/
+/*    border: 1px solid #ccc;*/
+/*    padding: 10px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+.login-register-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-register-btn svg {
+    margin-right: 10px;
+}
+
+.login-register-btn:hover {
+    background-color: blue;
+    color: white;
+}
