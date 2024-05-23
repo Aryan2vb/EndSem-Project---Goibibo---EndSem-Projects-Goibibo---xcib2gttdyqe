@@ -22,12 +22,13 @@ function SignIn({ setIsAuthenticated }) {
             }),
         })
             .then((response) => {
-                if (!response.ok) {
+                if (response.ok) {
+                    return response.json();
+                } else {
                     return response.json().then((data) => {
                         throw new Error(data.message || 'Login failed');
                     });
                 }
-                return response.json();
             })
             .then((data) => {
                 localStorage.setItem('token', data.token);
