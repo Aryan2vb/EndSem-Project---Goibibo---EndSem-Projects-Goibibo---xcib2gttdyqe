@@ -13,6 +13,7 @@ import "./index.css";
 
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [cities, setCities] = useState([{ _id: "10001", cityState: "ALL" }]);
 
     useEffect(() => {
@@ -20,7 +21,12 @@ function App() {
         if (token) {
             setIsAuthenticated(true);
         }
+        setIsLoading(false);
     }, []);
+
+    if (isLoading){
+        return <div>Loading...</div>
+    }
 
     return (
         <Router>

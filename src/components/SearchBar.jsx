@@ -28,7 +28,7 @@ const Search = ({ cities, setCities, hotel, setHotels }) => {
 
         // Example usage
         const url = "https://academics.newtonschool.co/api/v1/bookingportals/city";
-        const projectId = "306amgyqeveh"; // Replace with your actual project ID
+        const projectId = "treoo5dhf86s"; // Replace with your actual project ID
 
         getData(url, projectId)
             .then((responseData) => {
@@ -59,14 +59,14 @@ const Search = ({ cities, setCities, hotel, setHotels }) => {
                 console.error("Error fetching hotels:", error);
             }
         }
-        getHotels("306amgyqeveh");
+        getHotels("treoo5dhf86s");
     }, [selectedValue]);
 
-    console.log(cities);
+    // console.log(cities);
 
     return (
-        <nav className="flex items-center justify-between bg-orange-500 p-4 shadow-md">
-            <div className="flex justify-items-center">
+        <nav className="flex items-center justify-between bg-orange-500 px-4 py-4 shadow-md ">
+            <div className="flex justify-items-center items-center lg:flex-row lg:justify-between">
                 <h1 className='text-white font-bold'>City:</h1>
 
                 <div className="flex items-center bg-white rounded-md w-94">
